@@ -1,6 +1,6 @@
 
 body{
-    background: url("back.png") no-repeat;
+    background: url("back.png") repeat-y;
     background-size: cover;
   color: white; 
   text-align: center;
