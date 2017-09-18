@@ -29,7 +29,8 @@ p{
     top:20%;
     overflow: hidden;
     font-size: 80px;
-    animation: fadeIn1 2s steps(50, end); 
+    animation: fadeIn1 2s steps(50, end);
+    animation-delay: 1s; 
 }
 #heading2{
     position:absolute;
@@ -37,6 +38,7 @@ p{
     overflow: hidden;
     font-size: 80px;
     animation: fadeIn2 2s steps(50, end); 
+    animation-delay: 1s;
 }
 #heading3{
     position:absolute;
