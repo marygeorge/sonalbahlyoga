@@ -1,6 +1,7 @@
 
 body{
-    background: url("back.png") no-repeat cover;
+    background: url("back.png") no-repeat;
+    background-size: cover;
   color: white; 
   text-align: center;
   font-family: 'Marck Script', cursive;
