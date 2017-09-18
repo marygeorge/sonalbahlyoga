@@ -121,7 +121,7 @@ p{
         position:absolute;
         top:37%;
         opacity: 0;
-        animation: fadeIn3a 3s steps(500, end); 
+        animation: fadeIn3a 3s steps(1000, end); 
         animation-delay: 2s;
         animation-fill-mode:forwards;
     }
