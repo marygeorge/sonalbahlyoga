@@ -1,6 +1,6 @@
 
 body{
-    background: url("back.png") repeat-y;
+    background: url("../images/back.png") repeat-y;
     background-size: cover;
   color: white; 
   text-align: center;
@@ -13,6 +13,13 @@ audio{
     top:0%;
     left:0%;
 } 
+#skip{
+    position:absolute;
+    top:0%;
+    left:70%;
+    font-size: 25px;
+    background-color: transparent;
+}
 p{
   margin:0px;
   white-space: nowrap;
@@ -23,7 +30,7 @@ p{
     animation: intro 4s steps(1000, end); 
     animation-delay: 6s;
     animation-fill-mode:forwards;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px #ff1d4f;
 }
 #heading1{
     position:absolute;
@@ -31,7 +38,6 @@ p{
     overflow: hidden;
     font-size: 80px;
     animation: fadeIn1 2s steps(50, end);
-    animation-delay: 1s; 
 }
 #heading2{
     position:absolute;
@@ -39,7 +45,6 @@ p{
     overflow: hidden;
     font-size: 80px;
     animation: fadeIn2 2s steps(50, end); 
-    animation-delay: 1s;
 }
 #heading3{
     position:absolute;
@@ -61,8 +66,8 @@ p{
 }
 #secBelow{
     position: absolute;
-    top:80%;
-    left:30%;
+    top:68%;
+    left:78%;
     opacity: 0;
     animation: type 3s steps(320, end); 
     animation-delay: 10s;
@@ -70,7 +75,15 @@ p{
     font-size: 35px;
     text-align: center
 }
-
+a{
+    display:block;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 2px;
+    background-color:#fff;
+    text-decoration: none;
+    color:purple;
+}
 @keyframes type{ 
   from{opacity: 0;}
   to{opacity: .8}
