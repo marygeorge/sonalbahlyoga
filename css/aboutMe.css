@@ -14,17 +14,17 @@ body{
 }
 #profileImg{
     position: absolute;
-    top: 25%;
+    top: 19%;
     left: 5%;
-    height: 40%;
-    width: 35%;
+    height: 75%;
+    width: 33%;
     border-width: 4px;
     border-style: ridge;
     border-color: darkgrey;
 }
 #story{
     position: absolute;
-    top: 25%;
+    top: 19%;
     left: 40%;
     height: 75%;
     width: 50%;

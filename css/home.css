@@ -44,11 +44,18 @@ a{
     margin-bottom: 2px;
     background-color:#fff;
     text-decoration: none;
-    color:purple;
+    color:darkgrey;
+}
+a:hover{
+    display:block;
+    background-color:transparent;
+    opacity: 1;
+    font-weight: bold;
+    color:darkgrey;
 }
 @keyframes type{ 
   from{opacity: 0;}
-  to{opacity: .8}
+  to{opacity: 1}
   
 } 
 
