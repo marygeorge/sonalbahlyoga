@@ -1,6 +1,6 @@
 
 body{
-    background: url("../images/back.png") repeat-y;
+    background: url("../images/natureStoneBack.png") repeat-y;
     background-size: cover;
   color: white; 
   text-align: center;
@@ -30,7 +30,7 @@ p{
     animation: intro 4s steps(1000, end); 
     animation-delay: 6s;
     animation-fill-mode:forwards;
-    text-shadow: 2px 2px #ff1d4f;
+    text-shadow: 2px 2px #004547;
 }
 #heading1{
     position:absolute;
@@ -68,21 +68,35 @@ p{
     position: absolute;
     top:68%;
     left:78%;
-    opacity: 0;
+    opacity: 0.5;
     animation: type 3s steps(320, end); 
     animation-delay: 10s;
     animation-fill-mode:forwards;
     font-size: 35px;
     text-align: center
 }
+.menuItem{
+        opacity: 1;
+        display:block;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-bottom: 2px;
+        background-color:#fff;
+        text-decoration: none;
+        color:darkgrey;
+    }
 a{
     display:block;
     padding-left: 2px;
     padding-right: 2px;
     margin-bottom: 2px;
-    background-color:#fff;
     text-decoration: none;
-    color:purple;
+    color:darkgrey;
+    background-color:transparent;
+}
+a:hover{
+    font-weight: bold;
+    color:#000;
 }
 @keyframes type{ 
   from{opacity: 0;}
@@ -107,7 +121,7 @@ a{
 @keyframes intro{
     from{color:white;}
     to{color: transparent;}
-    from{text-shadow: 2px 2px #ff0000;}
+    from{text-shadow: 2px 2px #004547;}
     to{text-shadow: 0px 0px 0 transparent;}
     
 }
@@ -151,6 +165,7 @@ a{
     }
     #secBelow{
         position: absolute;
+        opacity: .5;
         top:60%;
         left:9%;
         opacity: 0;
@@ -160,6 +175,7 @@ a{
         font-size: 19px;
         text-align: center
     }
+    
 }
 
 @keyframes fadeIn1a{

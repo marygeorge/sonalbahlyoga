@@ -1,15 +1,21 @@
 
 body{
-    background: url("../images/back.png") no-repeat;
-    background-size: cover;
     color: white; 
     text-align: center;
     font-family: 'Marck Script', cursive;
 }
-audio{
-    position:absolute;
+#backgroundImg{
+    position: fixed;
     top:0%;
     left:0%;
+    height:100%;
+    width:100%;
+}
+audio{
+    position:absolute;
+    top:95%;
+    left:0%;
+    opacity: .5;
 } 
 p{
   margin:0px;
@@ -23,7 +29,7 @@ p{
     top:9%;
     left:25%;
     opacity: 0;
-    animation: type 3s steps(400, end); 
+    animation: type 1s steps(400, end); 
     animation-fill-mode:forwards;
 }
 #secBelow{
@@ -31,8 +37,8 @@ p{
     top:68%;
     left:78%;
     opacity: 0;
-    animation: type 3s steps(320, end); 
-    animation-delay: .5s;
+    animation: type 1s steps(320, end); 
+    /*animation-delay: .5s;*/
     animation-fill-mode:forwards;
     font-size: 35px;
     text-align: center
@@ -42,16 +48,13 @@ a{
     padding-left: 2px;
     padding-right: 2px;
     margin-bottom: 2px;
-    background-color:#fff;
     text-decoration: none;
     color:darkgrey;
+    background-color:transparent;
 }
 a:hover{
-    display:block;
-    background-color:transparent;
-    opacity: 1;
     font-weight: bold;
-    color:darkgrey;
+    color:#000;
 }
 @keyframes type{ 
   from{opacity: 0;}
@@ -61,28 +64,65 @@ a:hover{
 
 
 @media screen and (max-width: 415px){
-    
+
+    #backgroundImg{
+        opacity: 1;
+        height:50%;
+    }
     #name{
         position:absolute;
-        top:10%;
-        left:3%;
-        height: 35%;
-        width: 94%;
+        top:5%;
+        left:17%;
+        height: 25%;
+        width: 65%;
         opacity: 0;
-        animation: type 5s steps(320, end); 
-        animation-fill-mode:forwards;
+       
     }
     #secBelow{
         position: absolute;
         top:60%;
         left:33%;
-        opacity: 0;
-        animation: type 3s steps(320, end); 
-        animation-delay: .5s;
-        animation-fill-mode:forwards;
         font-size: 19px;
         text-align: center
     }
+    a{
+        color:#004547;
+    }
+    audio {
+        position: absolute;
+        top: 93%;
+        left: 0%;
+    }
+
+    audio {
+        width: 300px;
+        height: 32px;
+    }
 }
 
+@media screen and (max-height: 415px){
+
+    
+    #name{
+        position: absolute;
+        top: 10%;
+        left: 28%;
+        height: 35%;
+        width: 42%;
+        opacity: 0;
+        
+    }
+    
+    #secBelow{
+        position: absolute;
+        top:60%;
+        left:60%;
+        opacity: 1;
+       font-size: 19px;
+        text-align: center
+    }
+    audio{
+        top:91%;
+    } 
+}
 
